@@ -1,0 +1,144 @@
+{
+  "assetsByChunkName": {
+    "commons": [
+      "commons-3edeec6f718b303ce9eb.js",
+      "commons-3edeec6f718b303ce9eb.js.map"
+    ],
+    "page-component---src-pages-blog-js": [
+      "page-component---src-pages-blog-js-e7f509ef5ab4fe08f9ae.js",
+      "page-component---src-pages-blog-js-e7f509ef5ab4fe08f9ae.js.map"
+    ],
+    "layout-component---index": [
+      "layout-component---index-31ace6efda563709a23f.js",
+      "layout-component---index-31ace6efda563709a23f.js.map"
+    ],
+    "page-component---src-templates-post-js": [
+      "page-component---src-templates-post-js-b175cfb875d769fa0e93.js",
+      "page-component---src-templates-post-js-b175cfb875d769fa0e93.js.map"
+    ],
+    "page-component---src-pages-index-js": [
+      "page-component---src-pages-index-js-26862c02f5880f4d926a.js",
+      "page-component---src-pages-index-js-26862c02f5880f4d926a.js.map"
+    ],
+    "path---projects": [
+      "path---projects-586c7e095e534a3909ec.js",
+      "path---projects-586c7e095e534a3909ec.js.map"
+    ],
+    "path---index": [
+      "path---index-e0960177bd3de877328c.js",
+      "path---index-e0960177bd3de877328c.js.map"
+    ],
+    "path---blog": [
+      "path---blog-6050a0977cc34b5fa044.js",
+      "path---blog-6050a0977cc34b5fa044.js.map"
+    ],
+    "path---blog-tags-windows": [
+      "path---blog-tags-windows-9c7f1822bbffc70f16e3.js",
+      "path---blog-tags-windows-9c7f1822bbffc70f16e3.js.map"
+    ],
+    "path---blog-tags-webservices": [
+      "path---blog-tags-webservices-be99e3a8e9b669ad2d63.js",
+      "path---blog-tags-webservices-be99e3a8e9b669ad2d63.js.map"
+    ],
+    "path---blog-tags-web": [
+      "path---blog-tags-web-30e5610439d7c94ffd61.js",
+      "path---blog-tags-web-30e5610439d7c94ffd61.js.map"
+    ],
+    "path---blog-tags-uefi": [
+      "path---blog-tags-uefi-4256de858e9e80f566d9.js",
+      "path---blog-tags-uefi-4256de858e9e80f566d9.js.map"
+    ],
+    "path---blog-tags-tdd": [
+      "path---blog-tags-tdd-cecded13b0fcf0b10468.js",
+      "path---blog-tags-tdd-cecded13b0fcf0b10468.js.map"
+    ],
+    "path---blog-tags-solid": [
+      "path---blog-tags-solid-3d8de0440ccb6d08e36b.js",
+      "path---blog-tags-solid-3d8de0440ccb6d08e36b.js.map"
+    ],
+    "path---blog-tags-rest": [
+      "path---blog-tags-rest-05ce0b3dad2789a3b802.js",
+      "path---blog-tags-rest-05ce0b3dad2789a3b802.js.map"
+    ],
+    "path---blog-tags-refind": [
+      "path---blog-tags-refind-0fecb5490d30d3046831.js",
+      "path---blog-tags-refind-0fecb5490d30d3046831.js.map"
+    ],
+    "path---blog-tags-phpba": [
+      "path---blog-tags-phpba-03cba25bc3ec77fe9f9b.js",
+      "path---blog-tags-phpba-03cba25bc3ec77fe9f9b.js.map"
+    ],
+    "path---blog-tags-php": [
+      "path---blog-tags-php-1c8acf993a9a56bbebc2.js",
+      "path---blog-tags-php-1c8acf993a9a56bbebc2.js.map"
+    ],
+    "path---blog-tags-orientacao-a-objetos": [
+      "path---blog-tags-orientacao-a-objetos-517424da53dbe6f84ae8.js",
+      "path---blog-tags-orientacao-a-objetos-517424da53dbe6f84ae8.js.map"
+    ],
+    "path---blog-tags-linux": [
+      "path---blog-tags-linux-f93d115f83bb7fe9ebb8.js",
+      "path---blog-tags-linux-f93d115f83bb7fe9ebb8.js.map"
+    ],
+    "path---blog-tags-heranca": [
+      "path---blog-tags-heranca-b477421b2e670bf51289.js",
+      "path---blog-tags-heranca-b477421b2e670bf51289.js.map"
+    ],
+    "path---blog-tags-dualboot": [
+      "path---blog-tags-dualboot-9cfaf297a978f1599f2d.js",
+      "path---blog-tags-dualboot-9cfaf297a978f1599f2d.js.map"
+    ],
+    "path---blog-tags-desenvolvimento-web": [
+      "path---blog-tags-desenvolvimento-web-de04b51f09cf0fe27662.js",
+      "path---blog-tags-desenvolvimento-web-de04b51f09cf0fe27662.js.map"
+    ],
+    "path---blog-tags-composicao": [
+      "path---blog-tags-composicao-fbf10ae169dcb8d788d8.js",
+      "path---blog-tags-composicao-fbf10ae169dcb8d788d8.js.map"
+    ],
+    "path---blog-tags-api": [
+      "path---blog-tags-api-4cef0a3bc7f26dd3269c.js",
+      "path---blog-tags-api-4cef0a3bc7f26dd3269c.js.map"
+    ],
+    "path---blog-por-que-devemos-preferir-composicao-ao-inves-de-heranca": [
+      "path---blog-por-que-devemos-preferir-composicao-ao-inves-de-heranca-ea25a3acae83ba07e9de.js",
+      "path---blog-por-que-devemos-preferir-composicao-ao-inves-de-heranca-ea25a3acae83ba07e9de.js.map"
+    ],
+    "path---blog-iniciando-com-tdd-1-minha-motivacao-e-primeiro-contato": [
+      "path---blog-iniciando-com-tdd-1-minha-motivacao-e-primeiro-contato-0d88523c9156224b4160.js",
+      "path---blog-iniciando-com-tdd-1-minha-motivacao-e-primeiro-contato-0d88523c9156224b4160.js.map"
+    ],
+    "path---blog-dual-boot-w-8-ponto-1-e-mint-em-um-acer-aspire-e-14": [
+      "path---blog-dual-boot-w-8-ponto-1-e-mint-em-um-acer-aspire-e-14-db2bbe5eee3a9c9e6fd4.js",
+      "path---blog-dual-boot-w-8-ponto-1-e-mint-em-um-acer-aspire-e-14-db2bbe5eee3a9c9e6fd4.js.map"
+    ],
+    "path---blog-diferenca-entre-api-e-web-service-de-maneira-simples": [
+      "path---blog-diferenca-entre-api-e-web-service-de-maneira-simples-4fd7505951973b5256af.js",
+      "path---blog-diferenca-entre-api-e-web-service-de-maneira-simples-4fd7505951973b5256af.js.map"
+    ],
+    "path---404": [
+      "path---404-8aa20f31ee4a3cad6439.js",
+      "path---404-8aa20f31ee4a3cad6439.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-8aa20f31ee4a3cad6439.js",
+      "path---404-html-8aa20f31ee4a3cad6439.js.map"
+    ],
+    "page-component---src-templates-tags-js": [
+      "page-component---src-templates-tags-js-cedc7fa01b04d5040884.js",
+      "page-component---src-templates-tags-js-cedc7fa01b04d5040884.js.map"
+    ],
+    "page-component---src-pages-projects-js": [
+      "page-component---src-pages-projects-js-ef65e1138a7d61fc7a91.js",
+      "page-component---src-pages-projects-js-ef65e1138a7d61fc7a91.js.map"
+    ],
+    "page-component---src-pages-404-js": [
+      "page-component---src-pages-404-js-f1f294043162a3631376.js",
+      "page-component---src-pages-404-js-f1f294043162a3631376.js.map"
+    ],
+    "app": [
+      "app-a3c44ac0d1c058df2a17.js",
+      "app-a3c44ac0d1c058df2a17.js.map"
+    ]
+  }
+}
