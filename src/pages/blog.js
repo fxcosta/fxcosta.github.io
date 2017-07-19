@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
-import { navigateTo } from "gatsby-link"
 import get from 'lodash/get';
 import sortBy from 'lodash/sortBy';
 import isArray from 'lodash/isArray';
