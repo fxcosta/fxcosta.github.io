@@ -5,4 +5,4 @@
 .publish
 .cache
 public
-scripts
+/scripts

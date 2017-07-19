@@ -32,7 +32,6 @@ module.exports = props => {
           name="description"
           content="Felix Costa - Full-stack Developer"
         />
-        <link href={require('./images/ewh.ico')} rel="icon" />
         {props.headComponents}
         {css}
         {head.title.toComponent()}
@@ -40,7 +39,6 @@ module.exports = props => {
         {head.link.toComponent()}
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link
           rel="alternate"
           type="application/rss+xml"

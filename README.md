@@ -1,4 +1,4 @@
-# eddywashere.com
+# Felix Costa
 
 This site is built with [gatsby](https://www.gatsbyjs.org/).
 

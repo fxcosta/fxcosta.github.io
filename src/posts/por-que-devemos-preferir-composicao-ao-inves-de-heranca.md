@@ -15,11 +15,15 @@ draft: false
 
 Logo quando estamos começando nossa longa caminhada sobre os vales escuros da orientação a objetos - e digo escuro por que cada dia que passa se aprende mais - aprendemos o uso e importância da herança. Se você está lendo esse artigo suponho que ao menos já tenha visto uma situação onde você viu ou implementou herança.
 
-Mas, será que minha classe realmente É-UM outra classe? Será que eu realmente tenho que adotar tais comportamentos e até mesmo sobrescreve-los? Será que a classe filha realmente precisa de todos esses métodos e não somente de um ou dois? Se a herança é ferramenta básica de extensão e reuso de funcionalidade por que seu uso é extremamente desencorajado? Bem, vamos começar por partes.<!--more-->
+Mas, será que minha classe realmente É-UM outra classe? Será que eu realmente tenho que adotar tais comportamentos e até mesmo sobrescreve-los? Será que a classe filha realmente precisa de todos esses métodos e não somente de um ou dois? Se a herança é ferramenta básica de extensão e reuso de funcionalidade por que seu uso é extremamente desencorajado? Bem, vamos começar por partes.
+
+<!--more-->
 
 Vamos ser diretos e listar os problemas da herança - levando em consideração que o leitor tenha noção da herança, seu objetivo e motivação. Primeiro ponto, inquestionável é: herança quebra o encapsulamento. Mas hein?
 
-Para essa afirmação vamos usar um exemplo claro, sem códigos ainda: Temos uma super classe chamada Dispositivo. Atualmente há duas classes derivadas de Dispositivo chamadas DispositivoA e DispositivoB e, logicamente, ambas herdam todos os métodos de Dispositivo mas vamos pegar um para exemplo que é chamado de conectarEntrada que é responsável pela lógica de como os dipositivos são conectados. Em nossa abstração - e ingenuidade - definimos o corpo desse método em Dispositivo e nas classes derivadas apenas nos referenciamos a ele, afinal, é o mesmo comportamento, não é? Porém, requisitos mudam e agora passamos a ter um novo tipo de dispositivo, o DispositivoC onde seu modo de entrada será diferente. A primeira coisa que pensamos é: ok, irei sobrescrever o método conectarEntrada, fazendo apenas os ajustes necessários. Obviamente o que você precisa? Conhecer como a super classe implementa esse método, daí você abre a classe, observa o que tem e comete a quebra do encapsulamento. Acabou encapsulamento, você violou um dos pilares da OO. Você tem conhecimento especifico demais.
+Para essa afirmação vamos usar um exemplo claro, sem códigos ainda: Temos uma super classe chamada Dispositivo. Atualmente há duas classes derivadas de Dispositivo chamadas DispositivoA e DispositivoB e, logicamente, ambas herdam todos os métodos de Dispositivo mas vamos pegar um para exemplo que é chamado de conectarEntrada que é responsável pela lógica de como os dipositivos são conectados.
+
+Em nossa abstração - e ingenuidade - definimos o corpo desse método em Dispositivo e nas classes derivadas apenas nos referenciamos a ele, afinal, é o mesmo comportamento, não é? Porém, requisitos mudam e agora passamos a ter um novo tipo de dispositivo, o DispositivoC onde seu modo de entrada será diferente. A primeira coisa que pensamos é: ok, irei sobrescrever o método conectarEntrada, fazendo apenas os ajustes necessários. Obviamente o que você precisa? Conhecer como a super classe implementa esse método, daí você abre a classe, observa o que tem e comete a quebra do encapsulamento. Acabou encapsulamento, você violou um dos pilares da OO. Você tem conhecimento especifico demais.
 
 E isso fica pior quando DispositivoC não usa metade dos métodos de Dispositivo mas mesmo assim continuamos a trabalhar com a herança afinal alguns métodos ainda são aproveitáveis. Comodismo?
 
@@ -29,7 +33,9 @@ E isso não é novidade, vide o artigo de Alan Snyder, [Encapsulation and Inhe
 
 Beleza, então se você tá falando que esse lance de herança deve ser analisada com muito, mas muito cuidado, que solução usar? Joshua Bloch em seu livro Effective Java nos diz: prefira composição em vez de herança. Vamos ver isso melhor!
 
-Quando utilizamos composição, instanciamos a classe que desejamos dentro de nosso código, ex: DispositivoC não herda mais de Dispositivo, ele não É-UM Dispositivo, ele TEM um Dispositivo. Dessa forma, estamos estendendo as responsabilidades pela delegação de trabalho a outros objetos, ou seja, DispositivoA tem um comportamento parecido com Dispositivo? Beleza, simplesmente use o comportamento de Dispositivo ao invés de ter essa responsabilidade em DispositivoA. Ou seja, é um modo mais geral de estender uma classe, onde um objeto, em vez de realizar uma de suas tarefas, delega tal tarefa a um objeto auxiliar associado, que no caso você usaria como classe pai.
+Quando utilizamos composição, instanciamos a classe que desejamos dentro de nosso código, ex: DispositivoC não herda mais de Dispositivo, ele não É-UM Dispositivo, ele TEM um Dispositivo. Dessa forma, estamos estendendo as responsabilidades pela delegação de trabalho a outros objetos, ou seja, DispositivoA tem um comportamento parecido com Dispositivo? Beleza, simplesmente use o comportamento de Dispositivo ao invés de ter essa responsabilidade em DispositivoA.
+
+Ou seja, é um modo mais geral de estender uma classe, onde um objeto, em vez de realizar uma de suas tarefas, delega tal tarefa a um objeto auxiliar associado, que no caso você usaria como classe pai.
 
 Ao utilizar a composição, teremos muito mais flexibilidade, além de ser mais comum em muitos padrões de projetos. Dessa forma temos projeto mais flexível a mudanças, respeitando os princípios de responsabilidade única, substituição de Liskov e tornando nosso código desacoplado. Qualquer alteração feita em Dispositivo não quebrará nossos clientes diretamente e podemos usar somente métodos que sejam realmente necessários.
 
@@ -62,18 +68,18 @@ Qualquer feedback, sugestão, erros (e isso é bem possível), críticas ou qual
 
 **Referências e fontes de estudo**:
 
-http://blog.berniesumption.com/software/inheritance-is-evil-and-must-be-destroyed/
+[berniesumption](http://blog.berniesumption.com/software/inheritance-is-evil-and-must-be-destroyed/)
 
-http://www.dsc.ufcg.edu.br/~jacques/cursos/map/html/pat/herancavscomposicao.htm
+[UFCG](http://www.dsc.ufcg.edu.br/~jacques/cursos/map/html/pat/herancavscomposicao.htm)
 
-http://blog.caelum.com.br/como-nao-aprender-orientacao-a-objetos-heranca/
+[Caelum](http://blog.caelum.com.br/como-nao-aprender-orientacao-a-objetos-heranca/)
 
-http://imasters.com.br/artigo/20380/java/heranca-x-composicao/
+[iMasters](http://imasters.com.br/artigo/20380/java/heranca-x-composicao/)
 
-https://en.wikipedia.org/wiki/Design_Patterns
+[Wikipedia](https://en.wikipedia.org/wiki/Design_Patterns)
 
-http://groselhas.maurogeorge.com.br/prefira-composicao-ao-inves-de-heranca-um-simples-exemplo-em-ruby.html#sthash.IXxGlACd.dpbs
+[maurogeorge](http://groselhas.maurogeorge.com.br/prefira-composicao-ao-inves-de-heranca-um-simples-exemplo-em-ruby.html#sthash.IXxGlACd.dpbs)
 
-http://marcionorberto.blogspot.com.br/2013/04/heranca-e-delegacao.html
+[marcionorberto](http://marcionorberto.blogspot.com.br/2013/04/heranca-e-delegacao.html)
 
-http://www.devmedia.com.br/heranca-versus-composicao-qual-utilizar/26145
+[DevMedia](http://www.devmedia.com.br/heranca-versus-composicao-qual-utilizar/26145)

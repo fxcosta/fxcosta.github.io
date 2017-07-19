@@ -19,6 +19,19 @@ const NavHeader = props => {
         </Link>
       </div>
 
+      <nav className="container-sidebar__nav">
+        <ul className="container-sidebar__menu">
+          <li className="container-sidebar__menu-item">
+            <Link className="container-sidebar__menu-anchor" to={'/'}>Home</Link>
+          </li>
+          <li className="container-sidebar__menu-item">
+            <Link className="container-sidebar__menu-anchor" to={'/blog/'}>Blog</Link>
+          </li>
+          <li className="container-sidebar__menu-item">
+            <Link className="container-sidebar__menu-anchor" to={'/projects/'}>Projects</Link>
+          </li>
+        </ul>
+      </nav>
       <section className="container-sidebar__social-media">
         <a className="container-sidebar__social-media-anchor" target="_blank"
           href="https://github.com/fxcosta">
@@ -35,20 +48,6 @@ const NavHeader = props => {
           <i className="fa fa-2x fa-facebook-square" aria-hidden="true"></i>
         </a>
       </section>
-
-      <nav className="container-sidebar__nav">
-        <ul className="container-sidebar__menu">
-          <li className="container-sidebar__menu-item">
-            <Link className="container-sidebar__menu-anchor" to={'/'}>Home</Link>
-          </li>
-          <li className="container-sidebar__menu-item">
-            <Link className="container-sidebar__menu-anchor" to={'/blog/'}>Blog</Link>
-          </li>
-          <li className="container-sidebar__menu-item">
-            <Link className="container-sidebar__menu-anchor" to={'/projects/'}>Projects</Link>
-          </li>
-        </ul>
-      </nav>
     </aside>
   );
 };

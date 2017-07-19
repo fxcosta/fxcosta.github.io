@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
+import { navigateTo } from "gatsby-link"
 import get from 'lodash/get';
 import sortBy from 'lodash/sortBy';
 import isArray from 'lodash/isArray';
@@ -26,14 +27,19 @@ const createTags = tags => {
 
 class BlogIndex extends React.Component {
 
+  goToExternalPosts = (url) => {
+    window.open(url, '_blank');
+  }
+
   renderPosts = () => {
     const articles = [];
     const posts = get(this, 'props.data.allMarkdownRemark.edges', []);
 
     articles.push(
       <article className="posts-list__post" key={`https://blog.lfdev.tk/me-explica-96651fc2c105`}>
-        <Link target="_blank"
-          to={`https://blog.lfdev.tk/me-explica-96651fc2c105`}>
+        <a
+          onClick={() => this.goToExternalPosts('https://blog.lfdev.tk/me-explica-96651fc2c105')}
+          href="#">
           <date className="posts-list__post-date">{`April 24, 2017`}</date>
           <h4 className="posts-list__post-title">
             {`First Class Objects, High-Order functions, Funções Anônimas e Closures no JavaScript`}
@@ -43,7 +49,7 @@ class BlogIndex extends React.Component {
             termos e conceitos que não tínhamos visto ou mesmo que não
             conseguimos assimilar e trazer...`
           }</p>
-        </Link>
+        </a>
       </article>
     );
 
@@ -51,9 +57,9 @@ class BlogIndex extends React.Component {
       <article
         className="posts-list__post"
         key={`https://devheroes.io/webpack-2-para-iniciantes-o-que-e-porque-usar-e-como-iniciar/`}>
-        <Link
-          target="_blank"
-          to={`https://devheroes.io/webpack-2-para-iniciantes-o-que-e-porque-usar-e-como-iniciar/`}>
+        <a
+          onClick={() => this.goToExternalPosts('https://devheroes.io/webpack-2-para-iniciantes-o-que-e-porque-usar-e-como-iniciar/')}
+          href="#">
           <date className="posts-list__post-date">{`January 30, 2017`}</date>
           <h4 className="posts-list__post-title">
             {`Webpack 2 para iniciantes – o que é, porque usar e como iniciar`}
@@ -63,7 +69,7 @@ class BlogIndex extends React.Component {
             desenvolvimento web moderno pode ser um problema,
             principalmente se você está iniciando...`
           }</p>
-        </Link>
+        </a>
       </article>
     );
 
