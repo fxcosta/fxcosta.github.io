@@ -4,7 +4,7 @@ import Container from './Container';
 
 const css = {
   title: {
-    fontSize: '3.46rem',
+    fontSize: '2.46rem',
     margin: '0',
     fontWeight: '300',
     color: '#555'

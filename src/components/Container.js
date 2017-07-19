@@ -1,5 +1,4 @@
 import React from 'react';
-// import Link from 'gatsby-link';
 
 const styles = {
   none: {
@@ -8,20 +7,19 @@ const styles = {
   large: {
     width: '100%',
     maxWidth: '1280px',
-    margin: '0 auto',
-    textAlign: 'center',
+    // margin: '0 auto',
+    textAlign: 'left',
     padding: '3rem 1rem',
     '@media(min-width: 480px)': {
-      padding: '4rem 0.5rem',
+      padding: '2rem 0.5rem',
     },
     '@media(min-width: 1200px)': {
-      padding: '5rem 0.5rem',
+      padding: '2rem 0.5rem',
     }
   },
   small: {
     width: '100%',
     maxWidth: '820px',
-    margin: '0 auto',
     padding: '3rem 1rem',
     '@media(min-width: 480px)': {
       padding: '4rem 0.5rem',

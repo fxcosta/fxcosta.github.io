@@ -1,0 +1,27 @@
+.posts-list {
+  margin: 2rem 0 0 0;
+}
+
+.posts-list__post {
+  margin: 2rem 0 0 0;
+}
+
+.posts-list__post-date {
+  color: #999;
+  font-weight: 600;
+  font-size: .77519rem;
+  margin: 0;
+}
+
+.posts-list__post-title {
+  margin: 0 0 .5rem 0;
+  color: #E32B46;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.posts-list__post-excerpt {
+  color: #666;
+  line-height: 1.5rem;
+  margin: 0 0 .5rem 0;
+}

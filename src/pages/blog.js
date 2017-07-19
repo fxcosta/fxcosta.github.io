@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import get from 'lodash/get';
+import sortBy from 'lodash/sortBy';
 import isArray from 'lodash/isArray';
 import Helmet from 'react-helmet';
 import selfie from '../images/me.jpg';
@@ -9,6 +10,8 @@ import formatDate from 'date-fns/format';
 import ContentHeader from '../components/ContentHeader';
 import Wrapper from '../components/Wrapper';
 import Container from '../components/Container';
+
+import '../css/blog.css';
 
 const createTags = tags => {
   if (!tags) {
@@ -20,62 +23,60 @@ const createTags = tags => {
   return tags.split(',').map(tag => tag.trim());
 };
 
-const css = {
-  button: {
-    color: '#fff',
-    border: '1px solid #E32B46',
-    padding: '.5rem 1rem',
-    display: 'inline-block',
-    borderRadius: '2px',
-    fontSize: '1rem',
-    backgroundColor: '#E32B46',
-    marginTop: '1rem',
-    textDecoration: 'none',
-    ':hover': {
-      backgroundColor: 'transparent',
-      color: '#E32B46'
-    }
-  },
-  posts: {
-    margin: '2rem 0 0 0'
-  },
-  post: {
-    margin: '0 0 3rem 0'
-  },
-  postDate: {
-    color: '#999',
-    fontWeight: '600',
-    fontSize: '.77519rem',
-    margin: '0'
-  },
-  postTitle: {
-    margin: '0 0 .5rem 0',
-    color: '#E32B46',
-    fontWeight: '400',
-    fontSize: '1.6rem'
-  },
-  postExcerpt: {
-    color: '#666',
-    lineHeight: '1.5rem',
-    margin: '0 0 .5rem 0',
-  }
-};
 
 class BlogIndex extends React.Component {
 
   renderPosts = () => {
     const articles = [];
     const posts = get(this, 'props.data.allMarkdownRemark.edges', []);
+
+    articles.push(
+      <article className="posts-list__post" key={`https://blog.lfdev.tk/me-explica-96651fc2c105`}>
+        <Link target="_blank"
+          to={`https://blog.lfdev.tk/me-explica-96651fc2c105`}>
+          <date className="posts-list__post-date">{`April 24, 2017`}</date>
+          <h4 className="posts-list__post-title">
+            {`First Class Objects, High-Order functions, Funções Anônimas e Closures no JavaScript`}
+          </h4>
+          <p className="posts-list__post-excerpt">{
+            `As vezes em nossa rotina de estudo nos deparamos com certos
+            termos e conceitos que não tínhamos visto ou mesmo que não
+            conseguimos assimilar e trazer...`
+          }</p>
+        </Link>
+      </article>
+    );
+
+    articles.push(
+      <article
+        className="posts-list__post"
+        key={`https://devheroes.io/webpack-2-para-iniciantes-o-que-e-porque-usar-e-como-iniciar/`}>
+        <Link
+          target="_blank"
+          to={`https://devheroes.io/webpack-2-para-iniciantes-o-que-e-porque-usar-e-como-iniciar/`}>
+          <date className="posts-list__post-date">{`January 30, 2017`}</date>
+          <h4 className="posts-list__post-title">
+            {`Webpack 2 para iniciantes – o que é, porque usar e como iniciar`}
+          </h4>
+          <p className="posts-list__post-excerpt">{
+            `Desenvolver e configurar o ambiente para o
+            desenvolvimento web moderno pode ser um problema,
+            principalmente se você está iniciando...`
+          }</p>
+        </Link>
+      </article>
+    );
+
     posts.forEach(post => {
       const title = get(post, 'node.frontmatter.title', 'missing title');
       const tags = createTags(get(post, 'node.frontmatter.tags'));
       const date = formatDate(get(post, 'node.frontmatter.date'), 'MMMM D, YYYY');
       articles.push(
-        <article css={css.post} key={post.node.fields.slug}>
+        <article className="posts-list__post" key={post.node.fields.slug}>
           <Link to={post.node.fields.slug}>
-            <date css={css.postDate}>{date}</date>
-            <h4 css={css.postTitle}>{post.node.frontmatter.title}</h4>
-            <p css={css.postExcerpt}>{post.node.excerpt}</p>
+            <date className="posts-list__post-date">{date}</date>
+            <h4 className="posts-list__post-title">{post.node.frontmatter.title}</h4>
+            <p className="posts-list__post-excerpt">{post.node.excerpt}</p>
           </Link>
         </article>
       );
@@ -89,10 +90,10 @@ class BlogIndex extends React.Component {
     return (
       <div>
         <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
-        <ContentHeader title="Blog Archive" />
+        <ContentHeader title="Posts" />
         <Wrapper tag="main">
           <Container size="small">
-            <section css={css.posts}>
+            <section className="posts-list">
               {posts}
             </section>
           </Container>

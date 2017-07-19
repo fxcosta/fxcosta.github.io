@@ -1,15 +1,15 @@
-const siteUrl = process.env.NODE_ENV === 'production'
-  ? 'http://eddywashere.com'
-  : 'http://localhost:8000';
-const S3PATH = process.env.S3PATH;
+// const siteUrl = process.env.NODE_ENV === 'production'
+//   ? 'http://fxcosta.com'
+//   : 'http://localhost:8000';
+
 
 const config = {
+  pathPrefix: `/`,
   siteMetadata: {
-    title: 'eddywashere.com',
-    description: 'Eddy Hernandez - UI Engineer / San Francisco, CA',
-    site_url: siteUrl,
-    link: siteUrl,
-    author: 'Eddy Hernandez'
+    title: 'Felix Costa | Full-stack Developer',
+    description: 'Felix Costa - Full-stack Developer',
+    author: 'Felix Costa',
+    site_url: 'https://fxcosta.github.io'
   },
   plugins: [
     {
@@ -54,7 +54,7 @@ const config = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-7686535-1`
+        trackingId: `UA-85050778-1`
       }
     },
     {
@@ -107,9 +107,5 @@ const config = {
     // `gatsby-plugin-offline` TODO: wait for https://github.com/gatsbyjs/gatsby/issues/1189
   ]
 };
-
-if (S3PATH && S3PATH !== 'latest') {
-  config.pathPrefix = `/${S3PATH}`
-}
 
 module.exports = config;

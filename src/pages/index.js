@@ -9,6 +9,8 @@ import formatDate from 'date-fns/format';
 import Wrapper from '../components/Wrapper';
 import Container from '../components/Container';
 
+import '../css/page.css';
+
 const createTags = tags => {
   if (!tags) {
     return [];
@@ -123,20 +125,40 @@ class BlogIndex extends React.Component {
     const posts = this.renderPosts();
 
     return (
-      <div>
+      <div className="description">
         <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
         <Wrapper tag="header">
           <Container size="large">
-            <p>
-              <img css={css.selfie} src={selfie} title="Eddy Hernandez" />
-            </p>
-            <h1 css={css.title}>Eddy Hernandez</h1>
-            <p css={css.subtitle}>UI Engineer / San Francisco, CA</p>
-            <p css={css.leading}>I craft &amp; code interfaces for highly technical products used by companies all over the world.</p>
-            <Link css={css.button} to={'/projects/'}>View Projects</Link>
+            <h1 css={css.title}>Hi, I'm Felix Costa</h1>
+            {/* <p css={css.subtitle}>UI Engineer / San Francisco, CA</p> */}
+            <section className="description__section">
+              <p className="description__resume">
+                I'm <strong>Full-stack Developer</strong>, I live in Lauro de Freitas - BA,
+                currently working at Sotero Tech and also as Freelancer.
+              </p>
+
+              <p className="description__resume">
+                I'm passionate about code, the web, good practices and challenges.
+                I follow with pleasure the following philosophy: Study -> learn -> share.
+              </p>
+
+              <p className="description__resume">
+                Open source enthusiast, GDG Lauro de Freitas organizer,
+                participant / listener from various communities and PHP "evangelist".
+              </p>
+
+              <p className="description__resume">
+                The curiosity, the desire to always learn more and be
+                updated and the challenges of projects that
+                I already participated, motivate me and drives
+                me to always seek my best. In short, I love my work.
+              </p>
+            </section>
+
+            {/* <Link css={css.button} to={'/projects/'}>View Projects</Link> */}
           </Container>
         </Wrapper>
-        <Wrapper tag="main">
+        {/* <Wrapper tag="main">
           <Container size="small">
             <h3 css={css.title}>Recent Posts</h3>
             <section css={css.posts}>
@@ -146,7 +168,7 @@ class BlogIndex extends React.Component {
               <Link css={css.buttonOutline} to={'/blog/'}>View All Posts</Link>
             </p>
           </Container>
-        </Wrapper>
+        </Wrapper> */}
       </div>
     );
   }

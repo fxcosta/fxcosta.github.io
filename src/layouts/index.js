@@ -6,32 +6,20 @@ import NavHeader from '../components/NavHeader';
 import ContentHeader from '../components/ContentHeader';
 import Footer from '../components/Footer';
 
-
+import '../css/layout.css';
 import 'typeface-lato';
-
-const css = {
-  wrapper: {
-    minHeight: '100vh',
-    height: '100vh',
-    display: 'flex',
-    flexDirection: 'column'
-  },
-  content: {
-    flex: '1 0 auto'
-  }
-};
 
 class Layout extends React.Component {
   render() {
     const { location, children } = this.props;
     // add Header and Footer, pass props
     return (
-      <div css={css.wrapper}>
+      <div className="container-grid">
         <NavHeader {...this.props} />
-        <div css={css.content}>
+        <div className="container-content">
           {children()}
         </div>
-        <Footer {...this.props} />
+        {/* <Footer {...this.props} /> */}
       </div>
     );
   }

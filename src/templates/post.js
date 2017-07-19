@@ -10,18 +10,7 @@ import Container from '../components/Container';
 import slugify from 'slugify';
 import '../css/prism.css';
 import '../css/style.css';
-
-const css = {
-  comments: {
-    width: '100%',
-    maxWidth: '820px',
-    margin: '4rem auto 2rem',
-    padding: '0 1rem'
-  },
-  tagLink: {
-    color: '#E32B46'
-  }
-};
+import '../css/post.css';
 
 class BlogPost extends React.Component {
   renderTags = (post) => {
@@ -38,7 +27,7 @@ class BlogPost extends React.Component {
       const path = slugify(tag);
       return (
         <span key={tag}>
-          <Link css={css.tagLink} to={`/blog/tags/${path}`}>{tag}</Link>
+          <Link className="tag-link" to={`/blog/tags/${path}`}>{tag}</Link>
           {addComma(i)}
         </span>
       )
@@ -53,14 +42,16 @@ class BlogPost extends React.Component {
       <div>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
         <ContentHeader title={post.frontmatter.title} date={date} tags={tags} />
-        <Wrapper tag="main">
+        <Wrapper tag="main" className="main-article__section">
           <Container>
-            <article className="markdown" dangerouslySetInnerHTML={{ __html: post.html }} />
-            <section css={css.comments}>
+            <article
+              className="markdown-post"
+              dangerouslySetInnerHTML={{ __html: post.html }} />
+            <section className="disqus-comments">
               <Disqus
-                shortname="eddywashere"
+                shortname="fxcosta-github-io"
         				title={post.frontmatter.title}
-        				url={'http://eddywashere.com' + this.props.location.pathname}
+        				url={'http://fxcosta.github.io' + this.props.location.pathname}
               />
             </section>
           </Container>
