@@ -1,9 +1,25 @@
 import React from 'react';
+import Helmet from 'react-helmet';
+import get from 'lodash/get';
+
+import Wrapper from '../components/Wrapper';
+import Container from '../components/Container';
+import ContentHeader from '../components/ContentHeader';
 
 const ProjectsPage = (props) => {
 
   return (
-    <h2>Oops... Under construction</h2>
+    <div>
+      <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
+      <ContentHeader title="Oops... Under construction" />
+      <Wrapper tag="main">
+        <Container size="small">
+          <section>
+            Cooming soon
+          </section>
+        </Container>
+      </Wrapper>
+    </div>
   );
 }
 

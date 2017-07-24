@@ -2,43 +2,22 @@ import React from 'react';
 import Wrapper from './Wrapper';
 import Container from './Container';
 
-const css = {
-  title: {
-    fontSize: '2.46rem',
-    margin: '0',
-    fontWeight: '300',
-    color: '#555'
-  },
-  subtitle: {
-    fontSize: '1.1rem',
-    margin: '0',
-  },
-  leading: {
-    fontSize: '1.1rem'
-  },
-  p: {
-    margin: '0'
-  },
-  tags: {
-    margin: '0',
-    fontSize: '0.85rem'
-  },
-};
+import '../css/ContentHeader.css';
 
 const ContentHeader = ({title, date, tags, children}) => {
   return (
     <Wrapper tag="header">
       <Container size="large">
         { title && (
-          <h1 css={css.title}>{title}</h1>
+          <h1 className="content-header__title">{title}</h1>
         )}
         { date && (
-          <p css={css.p}>
+          <p className="content-header__paragraph">
             Published on {date}
           </p>
         )}
         { tags && (
-          <p css={css.tags}>{tags}</p>
+          <p className="content-header__tags">{tags}</p>
         )}
         {children}
       </Container>

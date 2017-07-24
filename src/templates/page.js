@@ -4,6 +4,7 @@ import Link from 'gatsby-link';
 import get from 'lodash/get';
 import ContentHeader from '../components/ContentHeader';
 import Main from '../components/Main';
+
 import cssStyles from '../css/prism.css';
 
 class Page extends React.Component {

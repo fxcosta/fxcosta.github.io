@@ -5,13 +5,12 @@ import get from 'lodash/get';
 import sortBy from 'lodash/sortBy';
 import isArray from 'lodash/isArray';
 import Helmet from 'react-helmet';
-import selfie from '../images/me.jpg';
 import formatDate from 'date-fns/format';
 import ContentHeader from '../components/ContentHeader';
 import Wrapper from '../components/Wrapper';
 import Container from '../components/Container';
 
-import '../css/blog.css';
+import '../css/Blog.css';
 
 const createTags = tags => {
   if (!tags) {

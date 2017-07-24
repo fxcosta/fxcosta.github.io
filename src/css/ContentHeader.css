@@ -1,0 +1,24 @@
+.content-header__title {
+  font-size: 2.46rem;
+  margin: 0;
+  font-weight: 300;
+  color: #555;
+}
+
+.content-header__subtitle {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.content-header__leading {
+  font-size: 1.1rem;
+}
+
+.content-header__paragraph {
+  margin: 0;
+}
+
+.content-header__tags {
+  margin: 0;
+  font-size: 0.85rem;
+}

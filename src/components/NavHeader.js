@@ -1,20 +1,13 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import logo from '../images/ewh.svg';
 
-import '../css/navheader.css';
-
-const css = {
-  logoLink: {
-    marginRight: 'auto'
-  }
-};
+import '../css/NavHeader.css';
 
 const NavHeader = props => {
   return (
     <aside className="container-sidebar">
       <div className="container-sidebar__avatar">
-        <Link css={css.logoLink} to={'/'}>
+        <Link className="container-sidebar__logo-link" to={'/'}>
           <img className="container-sidebar__selfie-mine" src={`https://s.gravatar.com/avatar/60591ae2bdb601f57648c8fcf7487aa5?s=160`} title="Felix Costa"/>
         </Link>
       </div>
@@ -27,9 +20,9 @@ const NavHeader = props => {
           <li className="container-sidebar__menu-item">
             <Link className="container-sidebar__menu-anchor" to={'/blog/'}>Blog</Link>
           </li>
-          <li className="container-sidebar__menu-item">
+          {/* <li className="container-sidebar__menu-item">
             <Link className="container-sidebar__menu-anchor" to={'/projects/'}>Projects</Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
       <section className="container-sidebar__social-media">

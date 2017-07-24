@@ -8,9 +8,10 @@ import ContentHeader from '../components/ContentHeader';
 import Wrapper from '../components/Wrapper';
 import Container from '../components/Container';
 import slugify from 'slugify';
+
 import '../css/prism.css';
 import '../css/style.css';
-import '../css/post.css';
+import '../css/Post.css';
 
 class BlogPost extends React.Component {
   renderTags = (post) => {

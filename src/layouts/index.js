@@ -6,7 +6,7 @@ import NavHeader from '../components/NavHeader';
 import ContentHeader from '../components/ContentHeader';
 import Footer from '../components/Footer';
 
-import '../css/layout.css';
+import '../css/Layout.css';
 import 'typeface-lato';
 
 class Layout extends React.Component {

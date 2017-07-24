@@ -1,0 +1,16 @@
+.footer__selfie {
+  border-radius: 100%;
+  display: inline-block;
+  width: 4rem;
+}
+
+.footer__container {
+  margin: 4rem 0;
+  padding: 0 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer__paragraph {
+  margin: 0.5rem 0;
+}

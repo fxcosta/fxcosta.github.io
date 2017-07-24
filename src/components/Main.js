@@ -1,16 +1,12 @@
 import React from 'react';
 import Wrapper from './Wrapper';
 
-const css = {
-  contentContainer: {
-    margin: '0 auto',
-  },
-};
+import '../css/Layout.css';
 
 const Main = ({html, children}) => {
   return (
     <Wrapper tag="main">
-      <div css={css.contentContainer}>
+      <div className="none">
         { html && (
           <article className="markdown" dangerouslySetInnerHTML={{ __html: html }} />
         )}

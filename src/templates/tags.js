@@ -7,7 +7,6 @@ import Helmet from 'react-helmet';
 import ContentHeader from '../components/ContentHeader';
 import Wrapper from '../components/Wrapper';
 import Container from '../components/Container';
-import selfie from '../images/me.jpg';
 import formatDate from 'date-fns/format';
 
 const createTags = tags => {
