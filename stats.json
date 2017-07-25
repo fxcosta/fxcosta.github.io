@@ -26,10 +26,6 @@
       "path---projects-586c7e095e534a3909ec.js",
       "path---projects-586c7e095e534a3909ec.js.map"
     ],
-    "path---offline-plugin-app-shell-fallback": [
-      "path---offline-plugin-app-shell-fallback-586c7e095e534a3909ec.js",
-      "path---offline-plugin-app-shell-fallback-586c7e095e534a3909ec.js.map"
-    ],
     "path---index": [
       "path---index-586c7e095e534a3909ec.js",
       "path---index-586c7e095e534a3909ec.js.map"
@@ -130,10 +126,6 @@
       "path---404-html-8aa20f31ee4a3cad6439.js",
       "path---404-html-8aa20f31ee4a3cad6439.js.map"
     ],
-    "page-component---node-modules-gatsby-plugin-offline-app-shell-js": [
-      "page-component---node-modules-gatsby-plugin-offline-app-shell-js-4f0dddda43ae15168f16.js",
-      "page-component---node-modules-gatsby-plugin-offline-app-shell-js-4f0dddda43ae15168f16.js.map"
-    ],
     "page-component---src-templates-tags-js": [
       "page-component---src-templates-tags-js-69652ef04d6d6aaf0dc3.js",
       "page-component---src-templates-tags-js-69652ef04d6d6aaf0dc3.js.map"
@@ -147,8 +139,8 @@
       "page-component---src-pages-404-js-f1f294043162a3631376.js.map"
     ],
     "app": [
-      "app-74b2a131a656210479dc.js",
-      "app-74b2a131a656210479dc.js.map"
+      "app-5977c00eb58c28d2d645.js",
+      "app-5977c00eb58c28d2d645.js.map"
     ]
   }
 }
