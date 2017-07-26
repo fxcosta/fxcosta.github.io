@@ -2,6 +2,7 @@ const _ = require('lodash');
 const path = require('path');
 const fs = require('fs-extra');
 const slugify = require('slugify');
+const OfflinePlugin = require('offline-plugin');
 
 const resourceTypePathMap = {
   posts: {
@@ -152,3 +153,17 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       return;
   }
 };
+
+// exports.modifyWebpackConfig = ({ config, stage }) => {
+//   config.plugin('offline-plugin', OfflinePlugin, [{
+//     externals: [
+//       '/'
+//     ],
+//     ServiceWorker: {
+//       navigateFallbackURL: '/'
+//     },
+//     publicPath: '/'
+//   }]);
+//
+//   return config;
+// };

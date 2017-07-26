@@ -28,6 +28,15 @@
   align-items: flex-end;
 }
 
+.container-sidebar__social-media-anchor {
+  padding: 0 15px;
+}
+
+.container-sidebar__menu-item--active {
+  color: #E32B46;
+  font-weight: 400;
+}
+
 .container-sidebar__social-media-anchor > .fa {
   color: #3F4158;
 }
@@ -54,6 +63,7 @@
     grid-row-start: 2;
     grid-row-span: 1;
     overflow: auto;
+    padding-right: 0;
   }
 
   .container-sidebar__social-media {
@@ -67,8 +77,12 @@
       align-items: flex-end;
       padding: 0;
     }
+
+    .container-sidebar__nav {
+      padding-right: 10px;
+    }
   }
-  
+
 }
 
 @media only screen and (min-width : 768px) {

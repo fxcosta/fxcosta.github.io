@@ -15,10 +15,16 @@ const NavHeader = props => {
       <nav className="container-sidebar__nav">
         <ul className="container-sidebar__menu">
           <li className="container-sidebar__menu-item">
-            <Link className="container-sidebar__menu-anchor" to={'/'}>Home</Link>
+            <Link
+              exact
+              activeClassName="container-sidebar__menu-item--active"
+              className="container-sidebar__menu-anchor" to="/">Home</Link>
           </li>
           <li className="container-sidebar__menu-item">
-            <Link className="container-sidebar__menu-anchor" to={'/blog/'}>Blog</Link>
+            <Link
+              activeClassName="container-sidebar__menu-item--active"
+              className="container-sidebar__menu-anchor"
+              to={'/blog/'}>Blog</Link>
           </li>
           {/* <li className="container-sidebar__menu-item">
             <Link className="container-sidebar__menu-anchor" to={'/projects/'}>Projects</Link>

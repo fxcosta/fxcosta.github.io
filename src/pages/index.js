@@ -22,115 +22,22 @@ const createTags = tags => {
 };
 
 const css = {
-  selfie: {
-    borderRadius: '100%',
-    display: 'inline-block',
-    width: '6rem',
-    '@media(min-width: 800px)': {
-      width: '7rem',
-    }
-  },
   title: {
     fontSize: '2.14rem',
     margin: '0',
     fontWeight: '300',
     color: '#555'
-  },
-  subtitle: {
-    fontSize: '1.1rem',
-    margin: '-0.35rem 0 0 0',
-  },
-  leading: {
-    fontSize: '1.1rem'
-  },
-  button: {
-    color: '#fff',
-    border: '1px solid #E32B46',
-    padding: '.5rem 1rem',
-    display: 'inline-block',
-    borderRadius: '2px',
-    fontSize: '1rem',
-    backgroundColor: '#E32B46',
-    marginTop: '1rem',
-    textDecoration: 'none',
-    ':hover': {
-      backgroundColor: 'transparent',
-      color: '#E32B46',
-      textDecoration: 'none',
-    }
-  },
-  buttonOutline: {
-    border: '1px solid #E32B46',
-    padding: '.5rem 1rem',
-    display: 'inline-block',
-    borderRadius: '2px',
-    fontSize: '1rem',
-    textDecoration: 'none',
-    color: '#E32B46',
-    backgroundColor: 'transparent',
-    ':hover': {
-      textDecoration: 'none',
-      backgroundColor: '#E32B46',
-      color: '#fff'
-    }
-  },
-  posts: {
-    margin: '2rem 0 0 0'
-  },
-  post: {
-    margin: '0 0 3rem 0'
-  },
-  postDate: {
-    color: '#999',
-    fontWeight: '600',
-    fontSize: '.77519rem',
-    margin: '0'
-  },
-  postTitle: {
-    margin: '0 0 .5rem 0',
-    color: '#E32B46',
-    fontWeight: '400',
-    fontSize: '1.6rem'
-  },
-  postExcerpt: {
-    color: '#666',
-    lineHeight: '1.5rem',
-    margin: '0 0 .5rem 0',
   }
 };
 
 class BlogIndex extends React.Component {
-
-  renderPosts = () => {
-    const articles = [];
-    const posts = get(this, 'props.data.allMarkdownRemark.edges', []);
-    posts.forEach(post => {
-      const title = get(post, 'node.frontmatter.title', 'missing title');
-      const tags = createTags(get(post, 'node.frontmatter.tags'));
-      const date = formatDate(get(post, 'node.frontmatter.date'), 'MMMM D, YYYY');
-      articles.push(
-        <article css={css.post} key={post.node.fields.slug}>
-          <Link to={post.node.fields.slug}>
-            <date css={css.postDate}>{date}</date>
-            <h4 css={css.postTitle}>{post.node.frontmatter.title}</h4>
-            <p css={css.postExcerpt}>{post.node.excerpt}</p>
-          </Link>
-        </article>
-      );
-    });
-
-    return articles;
-  }
   render() {
-    const posts = this.renderPosts();
-
     return (
       <div className="description">
         <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
         <Wrapper tag="header">
           <Container size="large">
             <h1 css={css.title}>Hi, I'm Felix Costa</h1>
-            {/* <p css={css.subtitle}>UI Engineer / San Francisco, CA</p> */}
             <section className="description__section">
               <p className="description__resume">
                 I'm <strong>Full-stack Developer</strong>, I live in Lauro de Freitas - BA,
@@ -149,26 +56,14 @@ class BlogIndex extends React.Component {
 
               <p className="description__resume">
                 The curiosity, the desire to always learn more and be
-                updated and the challenges of projects that
+                up to date, and the challenges of projects that
                 I already participated, motivate me and drives
                 me to always seek my best. In short, I love my work.
               </p>
             </section>
 
-            {/* <Link css={css.button} to={'/projects/'}>View Projects</Link> */}
           </Container>
         </Wrapper>
-        {/* <Wrapper tag="main">
-          <Container size="small">
-            <h3 css={css.title}>Recent Posts</h3>
-            <section css={css.posts}>
-              {posts}
-            </section>
-            <p css={{textAlign: 'right'}}>
-              <Link css={css.buttonOutline} to={'/blog/'}>View All Posts</Link>
-            </p>
-          </Container>
-        </Wrapper> */}
       </div>
     );
   }
@@ -179,35 +74,3 @@ BlogIndex.propTypes = {
 };
 
 export default BlogIndex;
-
-export const pageQuery = graphql`
-query RecentPosts {
-  site {
-    siteMetadata {
-      title
-    }
-  }
-  allMarkdownRemark(
-    limit: 3,
-    sort: { order: DESC, fields: [frontmatter___date] },
-    filter: {
-      frontmatter: { draft: { ne: true } },
-      fields: { collection: { eq: "posts" }}
-    }
-  ) {
-    edges {
-      node {
-        excerpt(pruneLength: 168),
-        fields {
-          slug
-        }
-        frontmatter {
-          title,
-          tags,
-          date
-        }
-      }
-    }
-  }
-}
-`;

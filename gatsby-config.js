@@ -104,7 +104,36 @@ const config = {
         ]
       }
     },
-    // `gatsby-plugin-offline` TODO: wait for https://github.com/gatsbyjs/gatsby/issues/1189
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Felix Costa",
+        short_name: "fxcosta",
+        start_url: "/",
+        background_color: "#f7f0eb",
+        theme_color: "#a2466c",
+        display: "fullscreen",
+        orientation: "portrait",
+        icons: [
+          {
+            // Everything in /static will be copied to an equivalent
+            // directory in /public during development and build, so
+            // assuming your favicons are in /static/favicons,
+            // you can reference them here
+            src: `/favicons/android-chrome-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+          {
+            src: `/favicons/android-chrome-384x384.png`,
+            sizes: `384x384`,
+            type: `image/png`,
+          },
+        ],
+      },
+    },
+    // `gatsby-plugin-offline`
+    // TODO: wait for https://github.com/gatsbyjs/gatsby/issues/1189
   ]
 };
 

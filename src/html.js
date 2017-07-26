@@ -45,6 +45,9 @@ module.exports = props => {
           title="fxcosta.github.io"
           href="/rss.xml"
         />
+
+        <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16" />
       </head>
       <body>
         <div id="___gatsby" dangerouslySetInnerHTML={{ __html: props.body }} />

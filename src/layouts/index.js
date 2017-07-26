@@ -5,6 +5,8 @@ import Helmet from 'react-helmet';
 import NavHeader from '../components/NavHeader';
 import ContentHeader from '../components/ContentHeader';
 import Footer from '../components/Footer';
+// require('offline-plugin/runtime').install();
+
 
 import '../css/Layout.css';
 import 'typeface-lato';
@@ -19,16 +21,10 @@ class Layout extends React.Component {
         <div className="container-content">
           {children()}
         </div>
-        {/* <Footer {...this.props} /> */}
+        {/* <Footer ...this.props /> */}
       </div>
     );
   }
 }
-
-Layout.propTypes = {
-  children: PropTypes.func,
-  location: PropTypes.object,
-  route: PropTypes.object
-};
 
 export default Layout;

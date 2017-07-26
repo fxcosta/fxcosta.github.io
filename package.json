@@ -10,8 +10,8 @@
     "gatsby-plugin-feed": "latest",
     "gatsby-plugin-glamor": "latest",
     "gatsby-plugin-google-analytics": "latest",
-    "gatsby-plugin-manifest": "latest",
-    "gatsby-plugin-offline": "latest",
+    "gatsby-plugin-manifest": "^1.0.1",
+    "gatsby-plugin-offline": "^1.0.1",
     "gatsby-plugin-sharp": "latest",
     "gatsby-remark-copy-linked-files": "latest",
     "gatsby-remark-prismjs": "latest",
@@ -44,5 +44,8 @@
     "prebuild": "rm -rf ./public",
     "build": "gatsby build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  },
+  "devDependencies": {
+    "offline-plugin": "^4.8.3"
   }
 }

@@ -1,10 +1,11 @@
 import React from 'react';
 import '../css/Layout.css';
 
-const Wrapper = ({...props}) => {
-
+const Wrapper = ({tag, ...props}) => {
+  const element = tag || 'div';
+  
   return (
-    <div className="wrapper" {...props}/>
+    <tag className="wrapper" {...props}/>
   );
 };
 
