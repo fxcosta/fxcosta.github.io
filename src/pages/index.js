@@ -74,3 +74,13 @@ BlogIndex.propTypes = {
 };
 
 export default BlogIndex;
+
+export const pageQuery = graphql`
+query IndexQuery {
+  site {
+    siteMetadata {
+      title
+    }
+  }
+}
+`;

@@ -49,7 +49,7 @@
     width: 100%;
     margin: 0 auto;
     display: grid;
-    
+
     grid-gap: 10px;
 
     grid-template-columns: 20% auto;
@@ -95,6 +95,10 @@
     grid-area: content;
   }
 
+  .small {
+    max-width: 820px;
+  }
+
   @media only screen and (min-width : 768px) {
     .container-grid {
       grid-template-areas:
@@ -105,14 +109,10 @@
 
     .container-sidebar {
       position: fixed;
+      min-width: 15%;
       height: 100%;
     }
   }
-
-  .small {
-    max-width: 820px;
-  }
-
 }
 
 @media(min-width: 480px) {
@@ -125,12 +125,6 @@
   }
 }
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-
-}
-
-/* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
   .container-grid {
     flex-direction: row;
