@@ -1,0 +1,2 @@
+webpackJsonp([0x81b8806e4260],{445:function(t,e){t.exports={data:{site:{siteMetadata:{title:"Felix Costa | Full-stack Developer"}}},pathContext:{}}}});
+//# sourceMappingURL=path---index-9b4d5099f98b970d0c51.js.map
