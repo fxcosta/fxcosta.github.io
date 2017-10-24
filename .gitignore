@@ -7,3 +7,5 @@
 public
 /scripts
 ngrok
+.history/
+npm-debug.log.*

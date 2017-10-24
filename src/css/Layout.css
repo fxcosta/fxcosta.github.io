@@ -6,9 +6,8 @@
 }
 
 .container-sidebar {
-  background-color: #B3BCDB;
+  background-color: #07091d;
   flex: 1 0 200px;
-  min-height: 100vh;
 }
 
 .container-content {
@@ -65,7 +64,7 @@
   }
 
   .container-sidebar {
-    background-color: #B3BCDB;
+    background-color: #07091d;
 
     grid-column: 1 / 2;
     -ms-grid-column: 1;
@@ -121,13 +120,17 @@
   }
 
   .small {
-    padding: 4rem 0.5rem;
+    padding: 2rem 0.5rem;
   }
 }
 
 @media only screen and (min-width : 768px) {
   .container-grid {
     flex-direction: row;
+  }
+
+  .container-sidebar {
+    min-height: 100vh;
   }
 }
 
@@ -137,6 +140,6 @@
   }
 
   .small {
-    padding: 4rem 0.5rem;
+    padding: 2rem 0.5rem;
   }
 }

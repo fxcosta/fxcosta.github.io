@@ -42,6 +42,7 @@ a {
   color: #0089BB;
 }
 
+
 p a:hover {
   text-decoration: underline;
 }
@@ -52,4 +53,8 @@ strong {
 
 .tag-link {
     color: #E32B46;
+}
+
+.no-underline:hover {
+  text-decoration: none;
 }

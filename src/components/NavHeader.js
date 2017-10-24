@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 
 import '../css/NavHeader.css';
 
-const NavHeader = props => {
+const NavHeader = (props) => {
   return (
     <aside className="container-sidebar">
       <div className="container-sidebar__avatar">

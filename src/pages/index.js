@@ -40,18 +40,21 @@ class BlogIndex extends React.Component {
             <h1 css={css.title}>Hi, I'm Felix Costa</h1>
             <section className="description__section">
               <p className="description__resume">
-                I'm <strong>Full-stack Developer</strong>, I live in Lauro de Freitas - BA,
-                currently working at Sotero Tech and also as Freelancer.
+                I'm <strong>Software Developer</strong>, I live in Lauro de Freitas - Bahia,
+                currently working at&nbsp;
+                <a className="no-underline" 
+                  target="_blank" href="http://soterotech.com.br/">
+                  Sotero Tech
+                </a> and also as freelancer.
               </p>
 
               <p className="description__resume">
-                I'm passionate about code, the web, good practices and challenges.
-                I follow with pleasure the following philosophy: Study -> learn -> share.
+                I'm passionate about clean code, the web, good practices and challenges.
               </p>
 
               <p className="description__resume">
                 Open source enthusiast, GDG Lauro de Freitas organizer,
-                participant / listener from various communities and PHP "evangelist".
+                participant / listener from some communities and PHP "evangelist".
               </p>
 
               <p className="description__resume">

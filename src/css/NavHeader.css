@@ -16,7 +16,7 @@
 }
 
 .container-sidebar__menu-anchor {
-  color: #171524;
+  color: #F9F2E0;
   text-decoration: none;
   font-size: 1rem;
   text-transform: uppercase;
@@ -26,6 +26,9 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .container-sidebar__social-media-anchor {
@@ -88,5 +91,10 @@
 @media only screen and (min-width : 768px) {
   .container-sidebar__menu {
     align-items: flex-end;
+  }
+
+  .container-sidebar__social-media {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }

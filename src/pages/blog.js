@@ -34,9 +34,25 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges', []);
 
     articles.push(
-      <article className="posts-list__post" key={`https://blog.lfdev.tk/me-explica-96651fc2c105`}>
+      <article className="posts-list__post" key={`https://medium.com/lfdev-blog/angular-core-vs-shared-modules-c6efb13fa1f1`}>
         <a
-          onClick={() => this.goToExternalPosts('https://blog.lfdev.tk/me-explica-96651fc2c105')}
+          onClick={() => this.goToExternalPosts('https://medium.com/lfdev-blog/angular-core-vs-shared-modules-c6efb13fa1f1')}
+          href="#">
+          <date className="posts-list__post-date">{`August 08, 2017`}</date>
+          <h4 className="posts-list__post-title">
+            {`Angular: Core vs Shared Modules`}
+          </h4>
+          <p className="posts-list__post-excerpt">{
+            `Uma grande feature que foi adicionada na versão Release Candidate 5 do Angular 2 foi a ideia de módulos. Com esse conceito em mente conseguimos pensar na aplicação de uma forma menor...`
+          }</p>
+        </a>
+      </article>
+    );
+
+    articles.push(
+      <article className="posts-list__post" key={`https://medium.com/lfdev-blog/me-explica-96651fc2c105`}>
+        <a
+          onClick={() => this.goToExternalPosts('https://medium.com/lfdev-blog/me-explica-96651fc2c105')}
           href="#">
           <date className="posts-list__post-date">{`April 24, 2017`}</date>
           <h4 className="posts-list__post-title">
