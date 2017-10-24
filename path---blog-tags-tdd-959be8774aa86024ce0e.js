@@ -1,0 +1,2 @@
+webpackJsonp([83248582335362],{439:function(a,e){a.exports={data:{allMarkdownRemark:{edges:[{node:{excerpt:"E aí, pessoal! Esse artigo foi escrito originalmente para o  Blog PHP-BA , então confere lá e aproveita que tem bastante conteúdo interessante. Valeu, galera da…",fields:{slug:"/blog/iniciando-com-tdd-1-minha-motivacao-e-primeiro-contato/"},frontmatter:{title:"Iniciando com TDD #1 - Minha motivação e primeiro contato",tags:["tdd","phpba","php"],date:"2016-04-09"}}}]}},pathContext:{tag:"tdd"}}}});
+//# sourceMappingURL=path---blog-tags-tdd-959be8774aa86024ce0e.js.map

@@ -1,146 +1,152 @@
 {
   "assetsByChunkName": {
-    "commons": [
-      "commons-a4273dddb1f9ffda1a8f.js",
-      "build-js-styles.css",
-      "commons-a4273dddb1f9ffda1a8f.js.map",
-      "build-js-styles.css.map"
-    ],
-    "page-component---src-pages-blog-js": [
-      "page-component---src-pages-blog-js-154ebec58219e630f526.js",
-      "page-component---src-pages-blog-js-154ebec58219e630f526.js.map"
-    ],
-    "layout-component---index": [
-      "layout-component---index-676d668b310f559d246b.js",
-      "layout-component---index-676d668b310f559d246b.js.map"
-    ],
-    "page-component---src-templates-post-js": [
-      "page-component---src-templates-post-js-18716830e9daba0bd581.js",
-      "page-component---src-templates-post-js-18716830e9daba0bd581.js.map"
-    ],
-    "page-component---src-pages-index-js": [
-      "page-component---src-pages-index-js-34ae5a309cff46de3e9c.js",
-      "page-component---src-pages-index-js-34ae5a309cff46de3e9c.js.map"
-    ],
-    "path---projects": [
-      "path---projects-586c7e095e534a3909ec.js",
-      "path---projects-586c7e095e534a3909ec.js.map"
-    ],
-    "path---index": [
-      "path---index-8aa20f31ee4a3cad6439.js",
-      "path---index-8aa20f31ee4a3cad6439.js.map"
-    ],
-    "path---blog": [
-      "path---blog-6050a0977cc34b5fa044.js",
-      "path---blog-6050a0977cc34b5fa044.js.map"
-    ],
-    "path---blog-tags-windows": [
-      "path---blog-tags-windows-9c7f1822bbffc70f16e3.js",
-      "path---blog-tags-windows-9c7f1822bbffc70f16e3.js.map"
-    ],
-    "path---blog-tags-webservices": [
-      "path---blog-tags-webservices-cefe027600c25ed74e95.js",
-      "path---blog-tags-webservices-cefe027600c25ed74e95.js.map"
-    ],
-    "path---blog-tags-web": [
-      "path---blog-tags-web-8a3fe4da2cec44a6c1b6.js",
-      "path---blog-tags-web-8a3fe4da2cec44a6c1b6.js.map"
-    ],
-    "path---blog-tags-uefi": [
-      "path---blog-tags-uefi-4256de858e9e80f566d9.js",
-      "path---blog-tags-uefi-4256de858e9e80f566d9.js.map"
-    ],
-    "path---blog-tags-tdd": [
-      "path---blog-tags-tdd-cecded13b0fcf0b10468.js",
-      "path---blog-tags-tdd-cecded13b0fcf0b10468.js.map"
-    ],
-    "path---blog-tags-solid": [
-      "path---blog-tags-solid-3d8de0440ccb6d08e36b.js",
-      "path---blog-tags-solid-3d8de0440ccb6d08e36b.js.map"
-    ],
-    "path---blog-tags-rest": [
-      "path---blog-tags-rest-ddbceadfd746fb11f8aa.js",
-      "path---blog-tags-rest-ddbceadfd746fb11f8aa.js.map"
-    ],
-    "path---blog-tags-refind": [
-      "path---blog-tags-refind-0fecb5490d30d3046831.js",
-      "path---blog-tags-refind-0fecb5490d30d3046831.js.map"
-    ],
-    "path---blog-tags-phpba": [
-      "path---blog-tags-phpba-03cba25bc3ec77fe9f9b.js",
-      "path---blog-tags-phpba-03cba25bc3ec77fe9f9b.js.map"
-    ],
-    "path---blog-tags-php": [
-      "path---blog-tags-php-1c8acf993a9a56bbebc2.js",
-      "path---blog-tags-php-1c8acf993a9a56bbebc2.js.map"
-    ],
-    "path---blog-tags-orientacao-a-objetos": [
-      "path---blog-tags-orientacao-a-objetos-517424da53dbe6f84ae8.js",
-      "path---blog-tags-orientacao-a-objetos-517424da53dbe6f84ae8.js.map"
-    ],
-    "path---blog-tags-linux": [
-      "path---blog-tags-linux-f93d115f83bb7fe9ebb8.js",
-      "path---blog-tags-linux-f93d115f83bb7fe9ebb8.js.map"
-    ],
-    "path---blog-tags-heranca": [
-      "path---blog-tags-heranca-b477421b2e670bf51289.js",
-      "path---blog-tags-heranca-b477421b2e670bf51289.js.map"
-    ],
-    "path---blog-tags-dualboot": [
-      "path---blog-tags-dualboot-9cfaf297a978f1599f2d.js",
-      "path---blog-tags-dualboot-9cfaf297a978f1599f2d.js.map"
+    "path---blog-iniciando-com-tdd-1-minha-motivacao-e-primeiro-contato": [
+      "path---blog-iniciando-com-tdd-1-minha-motivacao-e-primeiro-contato-c8ef97082620c82c8fe6.js",
+      "path---blog-iniciando-com-tdd-1-minha-motivacao-e-primeiro-contato-c8ef97082620c82c8fe6.js.map"
     ],
     "path---blog-tags-desenvolvimento-web": [
-      "path---blog-tags-desenvolvimento-web-08587373399ca0a1de61.js",
-      "path---blog-tags-desenvolvimento-web-08587373399ca0a1de61.js.map"
+      "path---blog-tags-desenvolvimento-web-8ecf95533e7bfcd99abb.js",
+      "path---blog-tags-desenvolvimento-web-8ecf95533e7bfcd99abb.js.map"
     ],
-    "path---blog-tags-composicao": [
-      "path---blog-tags-composicao-fbf10ae169dcb8d788d8.js",
-      "path---blog-tags-composicao-fbf10ae169dcb8d788d8.js.map"
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-9edfa7ccc39e26f8b7f9.js",
+      "component---src-pages-index-js-9edfa7ccc39e26f8b7f9.js.map"
+    ],
+    "path---blog-tags-windows": [
+      "path---blog-tags-windows-f6e722613d43d3bed467.js",
+      "path---blog-tags-windows-f6e722613d43d3bed467.js.map"
+    ],
+    "path---blog-tags-heranca": [
+      "path---blog-tags-heranca-c75cc95a273db381d33f.js",
+      "path---blog-tags-heranca-c75cc95a273db381d33f.js.map"
+    ],
+    "path---blog": [
+      "path---blog-0145a550f6543b006c01.js",
+      "path---blog-0145a550f6543b006c01.js.map"
+    ],
+    "component---src-templates-tags-js": [
+      "component---src-templates-tags-js-91edaab1fe6feedf5ffa.js",
+      "component---src-templates-tags-js-91edaab1fe6feedf5ffa.js.map"
+    ],
+    "path---blog-tags-rest": [
+      "path---blog-tags-rest-bcc7eb6b4f0144317624.js",
+      "path---blog-tags-rest-bcc7eb6b4f0144317624.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
     ],
     "path---blog-tags-api": [
-      "path---blog-tags-api-0fb53dcef5a98f0f9cd0.js",
-      "path---blog-tags-api-0fb53dcef5a98f0f9cd0.js.map"
+      "path---blog-tags-api-a3492ee5cf8e8cf396ce.js",
+      "path---blog-tags-api-a3492ee5cf8e8cf396ce.js.map"
+    ],
+    "path---blog-tags-orientacao-a-objetos": [
+      "path---blog-tags-orientacao-a-objetos-158803e5fa7b85172fe8.js",
+      "path---blog-tags-orientacao-a-objetos-158803e5fa7b85172fe8.js.map"
+    ],
+    "path---blog-tags-tdd": [
+      "path---blog-tags-tdd-959be8774aa86024ce0e.js",
+      "path---blog-tags-tdd-959be8774aa86024ce0e.js.map"
+    ],
+    "path---projects": [
+      "path---projects-a0e39f21c11f6a62c5ab.js",
+      "path---projects-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---blog-por-que-devemos-preferir-composicao-ao-inves-de-heranca": [
-      "path---blog-por-que-devemos-preferir-composicao-ao-inves-de-heranca-2e42b7b85b2da64c7bbf.js",
-      "path---blog-por-que-devemos-preferir-composicao-ao-inves-de-heranca-2e42b7b85b2da64c7bbf.js.map"
+      "path---blog-por-que-devemos-preferir-composicao-ao-inves-de-heranca-75c0852dbece72aeaa6d.js",
+      "path---blog-por-que-devemos-preferir-composicao-ao-inves-de-heranca-75c0852dbece72aeaa6d.js.map"
     ],
-    "path---blog-iniciando-com-tdd-1-minha-motivacao-e-primeiro-contato": [
-      "path---blog-iniciando-com-tdd-1-minha-motivacao-e-primeiro-contato-0d88523c9156224b4160.js",
-      "path---blog-iniciando-com-tdd-1-minha-motivacao-e-primeiro-contato-0d88523c9156224b4160.js.map"
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-edc26de972f3fbf48f3a.js",
+      "component---src-layouts-index-js-edc26de972f3fbf48f3a.js.map"
     ],
-    "path---blog-dual-boot-w-8-ponto-1-e-mint-em-um-acer-aspire-e-14": [
-      "path---blog-dual-boot-w-8-ponto-1-e-mint-em-um-acer-aspire-e-14-db2bbe5eee3a9c9e6fd4.js",
-      "path---blog-dual-boot-w-8-ponto-1-e-mint-em-um-acer-aspire-e-14-db2bbe5eee3a9c9e6fd4.js.map"
+    "path---index": [
+      "path---index-9b4d5099f98b970d0c51.js",
+      "path---index-9b4d5099f98b970d0c51.js.map"
     ],
-    "path---blog-diferenca-entre-api-e-web-service-de-maneira-simples": [
-      "path---blog-diferenca-entre-api-e-web-service-de-maneira-simples-4fd7505951973b5256af.js",
-      "path---blog-diferenca-entre-api-e-web-service-de-maneira-simples-4fd7505951973b5256af.js.map"
+    "path---blog-tags-webservices": [
+      "path---blog-tags-webservices-632425e1e4a2c8d27664.js",
+      "path---blog-tags-webservices-632425e1e4a2c8d27664.js.map"
     ],
-    "path---404": [
-      "path---404-8aa20f31ee4a3cad6439.js",
-      "path---404-8aa20f31ee4a3cad6439.js.map"
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-6224f46cf9d869fd5cd1.js",
+      "component---src-pages-404-js-6224f46cf9d869fd5cd1.js.map"
+    ],
+    "commons": [
+      "commons-e0a330843764b62b2898.js",
+      "build-js-styles.css",
+      "commons-e0a330843764b62b2898.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---blog-tags-linux": [
+      "path---blog-tags-linux-b1dd39a3fa3add021ac2.js",
+      "path---blog-tags-linux-b1dd39a3fa3add021ac2.js.map"
+    ],
+    "path---blog-tags-uefi": [
+      "path---blog-tags-uefi-d5f9a24e7fb18bd89fc5.js",
+      "path---blog-tags-uefi-d5f9a24e7fb18bd89fc5.js.map"
     ],
     "path---404-html": [
-      "path---404-html-8aa20f31ee4a3cad6439.js",
-      "path---404-html-8aa20f31ee4a3cad6439.js.map"
+      "path---404-html-9b4d5099f98b970d0c51.js",
+      "path---404-html-9b4d5099f98b970d0c51.js.map"
     ],
-    "page-component---src-templates-tags-js": [
-      "page-component---src-templates-tags-js-69652ef04d6d6aaf0dc3.js",
-      "page-component---src-templates-tags-js-69652ef04d6d6aaf0dc3.js.map"
+    "path---blog-dual-boot-w-8-ponto-1-e-mint-em-um-acer-aspire-e-14": [
+      "path---blog-dual-boot-w-8-ponto-1-e-mint-em-um-acer-aspire-e-14-cf07b51bd20cf243df11.js",
+      "path---blog-dual-boot-w-8-ponto-1-e-mint-em-um-acer-aspire-e-14-cf07b51bd20cf243df11.js.map"
     ],
-    "page-component---src-pages-projects-js": [
-      "page-component---src-pages-projects-js-449bd3879da3ad3767e0.js",
-      "page-component---src-pages-projects-js-449bd3879da3ad3767e0.js.map"
+    "path---blog-diferenca-entre-api-e-web-service-de-maneira-simples": [
+      "path---blog-diferenca-entre-api-e-web-service-de-maneira-simples-6728ec4ac96b538ef80e.js",
+      "path---blog-diferenca-entre-api-e-web-service-de-maneira-simples-6728ec4ac96b538ef80e.js.map"
     ],
-    "page-component---src-pages-404-js": [
-      "page-component---src-pages-404-js-f1f294043162a3631376.js",
-      "page-component---src-pages-404-js-f1f294043162a3631376.js.map"
+    "path---blog-tags-refind": [
+      "path---blog-tags-refind-6793804670719bf7bfaf.js",
+      "path---blog-tags-refind-6793804670719bf7bfaf.js.map"
+    ],
+    "component---src-templates-post-js": [
+      "component---src-templates-post-js-b284052fd948ec786fbc.js",
+      "component---src-templates-post-js-b284052fd948ec786fbc.js.map"
+    ],
+    "path---blog-tags-dualboot": [
+      "path---blog-tags-dualboot-0c4fc6f9ba303b9158e3.js",
+      "path---blog-tags-dualboot-0c4fc6f9ba303b9158e3.js.map"
+    ],
+    "component---src-pages-blog-js": [
+      "component---src-pages-blog-js-95f05faf03c77aa90782.js",
+      "component---src-pages-blog-js-95f05faf03c77aa90782.js.map"
+    ],
+    "component---src-pages-projects-js": [
+      "component---src-pages-projects-js-306fbf3982ad12ccd018.js",
+      "component---src-pages-projects-js-306fbf3982ad12ccd018.js.map"
+    ],
+    "path---blog-tags-composicao": [
+      "path---blog-tags-composicao-94dcc2ca32a585f257c5.js",
+      "path---blog-tags-composicao-94dcc2ca32a585f257c5.js.map"
+    ],
+    "path---blog-tags-phpba": [
+      "path---blog-tags-phpba-fca7e2ea2dba831ee77c.js",
+      "path---blog-tags-phpba-fca7e2ea2dba831ee77c.js.map"
     ],
     "app": [
-      "app-0f76f954d8486dca48e2.js",
-      "app-0f76f954d8486dca48e2.js.map"
+      "app-cdfafa2d483a96528049.js",
+      "build-js-styles.css",
+      "app-cdfafa2d483a96528049.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---blog-tags-php": [
+      "path---blog-tags-php-c3356e642716d1a342bd.js",
+      "path---blog-tags-php-c3356e642716d1a342bd.js.map"
+    ],
+    "path---404": [
+      "path---404-9b4d5099f98b970d0c51.js",
+      "path---404-9b4d5099f98b970d0c51.js.map"
+    ],
+    "path---blog-tags-solid": [
+      "path---blog-tags-solid-b7c0d07f8baa91798542.js",
+      "path---blog-tags-solid-b7c0d07f8baa91798542.js.map"
+    ],
+    "path---blog-tags-web": [
+      "path---blog-tags-web-520421cbab0afa5037da.js",
+      "path---blog-tags-web-520421cbab0afa5037da.js.map"
     ]
   }
 }
