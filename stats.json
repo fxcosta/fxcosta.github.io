@@ -7,20 +7,20 @@
       "build-js-styles.css.map"
     ],
     "page-component---src-pages-blog-js": [
-      "page-component---src-pages-blog-js-383dd766c86143f97fb6.js",
-      "page-component---src-pages-blog-js-383dd766c86143f97fb6.js.map"
+      "page-component---src-pages-blog-js-154ebec58219e630f526.js",
+      "page-component---src-pages-blog-js-154ebec58219e630f526.js.map"
     ],
     "layout-component---index": [
-      "layout-component---index-9f441bad0af2ef3c3aa6.js",
-      "layout-component---index-9f441bad0af2ef3c3aa6.js.map"
+      "layout-component---index-676d668b310f559d246b.js",
+      "layout-component---index-676d668b310f559d246b.js.map"
     ],
     "page-component---src-templates-post-js": [
-      "page-component---src-templates-post-js-745fb519a86c16aa667d.js",
-      "page-component---src-templates-post-js-745fb519a86c16aa667d.js.map"
+      "page-component---src-templates-post-js-18716830e9daba0bd581.js",
+      "page-component---src-templates-post-js-18716830e9daba0bd581.js.map"
     ],
     "page-component---src-pages-index-js": [
-      "page-component---src-pages-index-js-d398a2a1fac836d1c62b.js",
-      "page-component---src-pages-index-js-d398a2a1fac836d1c62b.js.map"
+      "page-component---src-pages-index-js-34ae5a309cff46de3e9c.js",
+      "page-component---src-pages-index-js-34ae5a309cff46de3e9c.js.map"
     ],
     "path---projects": [
       "path---projects-586c7e095e534a3909ec.js",
@@ -39,12 +39,12 @@
       "path---blog-tags-windows-9c7f1822bbffc70f16e3.js.map"
     ],
     "path---blog-tags-webservices": [
-      "path---blog-tags-webservices-be99e3a8e9b669ad2d63.js",
-      "path---blog-tags-webservices-be99e3a8e9b669ad2d63.js.map"
+      "path---blog-tags-webservices-cefe027600c25ed74e95.js",
+      "path---blog-tags-webservices-cefe027600c25ed74e95.js.map"
     ],
     "path---blog-tags-web": [
-      "path---blog-tags-web-30e5610439d7c94ffd61.js",
-      "path---blog-tags-web-30e5610439d7c94ffd61.js.map"
+      "path---blog-tags-web-8a3fe4da2cec44a6c1b6.js",
+      "path---blog-tags-web-8a3fe4da2cec44a6c1b6.js.map"
     ],
     "path---blog-tags-uefi": [
       "path---blog-tags-uefi-4256de858e9e80f566d9.js",
@@ -59,8 +59,8 @@
       "path---blog-tags-solid-3d8de0440ccb6d08e36b.js.map"
     ],
     "path---blog-tags-rest": [
-      "path---blog-tags-rest-05ce0b3dad2789a3b802.js",
-      "path---blog-tags-rest-05ce0b3dad2789a3b802.js.map"
+      "path---blog-tags-rest-ddbceadfd746fb11f8aa.js",
+      "path---blog-tags-rest-ddbceadfd746fb11f8aa.js.map"
     ],
     "path---blog-tags-refind": [
       "path---blog-tags-refind-0fecb5490d30d3046831.js",
@@ -91,16 +91,16 @@
       "path---blog-tags-dualboot-9cfaf297a978f1599f2d.js.map"
     ],
     "path---blog-tags-desenvolvimento-web": [
-      "path---blog-tags-desenvolvimento-web-de04b51f09cf0fe27662.js",
-      "path---blog-tags-desenvolvimento-web-de04b51f09cf0fe27662.js.map"
+      "path---blog-tags-desenvolvimento-web-08587373399ca0a1de61.js",
+      "path---blog-tags-desenvolvimento-web-08587373399ca0a1de61.js.map"
     ],
     "path---blog-tags-composicao": [
       "path---blog-tags-composicao-fbf10ae169dcb8d788d8.js",
       "path---blog-tags-composicao-fbf10ae169dcb8d788d8.js.map"
     ],
     "path---blog-tags-api": [
-      "path---blog-tags-api-4cef0a3bc7f26dd3269c.js",
-      "path---blog-tags-api-4cef0a3bc7f26dd3269c.js.map"
+      "path---blog-tags-api-0fb53dcef5a98f0f9cd0.js",
+      "path---blog-tags-api-0fb53dcef5a98f0f9cd0.js.map"
     ],
     "path---blog-por-que-devemos-preferir-composicao-ao-inves-de-heranca": [
       "path---blog-por-que-devemos-preferir-composicao-ao-inves-de-heranca-2e42b7b85b2da64c7bbf.js",
